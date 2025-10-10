@@ -30,10 +30,12 @@ function RecoveryAuthPage() {
       body: JSON.stringify(values),
     });
 
+    console.log("RecoveryAuthPage",res)
     const data = await res.json();
+    // console.log("RecoveryAuthPage",data.id)
 
     if (res.ok) {
-      console.log("success", data);
+      console.log("success", data.id);
       toast.success("Login Succecssfull");
       setCode("");
       router.push("/home");
@@ -69,7 +71,7 @@ function RecoveryAuthPage() {
             value={code}
             onChange={(e) => setCode(e.target.value)}
             className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:outline-none text-start text-2xl tracking-widest"
-            placeholder="_ - _ - _ - _"
+            placeholder="_ - _ - _ - _- _ - _ -"
             maxLength={12}
             required
           />
