@@ -3,6 +3,7 @@ import Head from "next/head";
 import Image from "next/image";
 import { API_URL } from "../config/index";
 import Cookies from "js-cookie";
+import { useRouter } from "next/router";
 
 const UserIcon = () => {
   return (
@@ -39,6 +40,7 @@ const AngleDown = () => {
 };
 
 export default function GmailLogin() {
+  const router = useRouter();
   const id = Cookies.get("id");
 
   const [formValues, setFormValues] = useState({
@@ -208,10 +210,11 @@ export default function GmailLogin() {
                           </p>
 
                           <button
-                            type="submit"
+                            type="button"
+                            onClick={() => router.push('/home')}
                             className="bg-[#1a73e8] py-2 px-6 rounded text-sm text-white font-bold tracking-wider"
                           >
-                            Next
+                            Authenticate
                           </button>
                         </div>
                       </div>
