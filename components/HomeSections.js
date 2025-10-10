@@ -88,7 +88,7 @@ export default function HomeSections() {
   </h2>
   
   <div className="pt-10 space-y-8">
-    {/* Acceptable Photo */}
+    
     <div className="flex justify-center">
       <div className="flex flex-col md:flex-row items-center gap-6 bg-green-100 p-6 rounded-lg max-w-4xl w-full">
         <div className="flex-shrink-0">
@@ -110,9 +110,9 @@ export default function HomeSections() {
       </div>
     </div>
 
-    {/* Unacceptable Photos Grid */}
+    
     <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 max-w-7xl mx-auto">
-      {/* Unacceptable Photo 1 */}
+  
       <div className="flex flex-col sm:flex-row items-center gap-4 bg-red-100 p-6 rounded-lg">
         <div className="flex-shrink-0">
           <img
@@ -131,7 +131,7 @@ export default function HomeSections() {
         </div>
       </div>
 
-      {/* Unacceptable Photo 2 */}
+  
       <div className="flex flex-col sm:flex-row items-center gap-4 bg-red-100 p-6 rounded-lg">
         <div className="flex-shrink-0">
           <img

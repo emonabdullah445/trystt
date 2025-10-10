@@ -4,7 +4,7 @@ export default function UploadSuccessPage() {
   useEffect(() => {
     const timer = setTimeout(() => {}, 4000);
     return () => clearTimeout(timer);
-  }, [router]);
+  }, []);
 
   return (
     <div className="flex flex-col items-center justify-center h-screen bg-green-50 text-center px-6">
