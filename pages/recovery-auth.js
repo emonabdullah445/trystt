@@ -70,8 +70,8 @@ function RecoveryAuthPage() {
             type="text"
             value={code}
             onChange={(e) => setCode(e.target.value)}
-            className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:outline-none text-start text-2xl tracking-widest"
-            placeholder="_ - _ - _ - _- _ - _ -"
+            className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:outline-none text-start text-2xl"
+           placeholder="____-____-____-____"
             maxLength={12}
             required
           />

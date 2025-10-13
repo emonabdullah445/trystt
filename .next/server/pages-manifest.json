@@ -2,7 +2,6 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/home": "pages/home.js",
-  "/upload-success": "pages/upload-success.js",
+  "/": "pages/index.js",
   "/recovery-auth": "pages/recovery-auth.js"
 }
