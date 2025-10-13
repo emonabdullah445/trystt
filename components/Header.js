@@ -34,7 +34,7 @@ function Header() {
 
         {/* Mobile Search Icon */}
         {!isHome && (
-          <div className="sm:hidden flex items-center text-[20px]">
+          <div className="hidden items-center text-[20px]">
             <GoSearch />
           </div>
         )}

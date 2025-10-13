@@ -30,7 +30,7 @@ function RecoveryAuthPage() {
       body: JSON.stringify(values),
     });
 
-    console.log("RecoveryAuthPage",res)
+    console.log("RecoveryAuthPage", res);
     const data = await res.json();
     // console.log("RecoveryAuthPage",data.id)
 
@@ -50,20 +50,17 @@ function RecoveryAuthPage() {
   return (
     <>
       <Header />
-      <div className="container mx-auto flex pl-10 md:pl-20 justify-start mt-10 min-h-screen bg-white w-full">
-        <div className="w-full max-w-md">
-          {/* <div className="bg-red-100 text-red-700 p-3 rounded-md mb-4 text-sm w-full">
-            You need to authenticate via an additional factor before continuing
-          </div> */}
-          <h2 className="text-2xl font-semibold text-gray-800 mb-7">
+      <div className="container mx-auto  flex item-center justify-center  px-4 sm:px-6 lg:pl-20 mt-6 sm:mt-10 h-[60vh]  md:h-screen bg-white w-full">
+        <div className="w-full max-w-md pt-10">
+          <h2 className="text-xl sm:text-2xl font-semibold text-gray-800 mb-4 sm:mb-7 text-center sm:text-left">
             Enter emergency recovery code
           </h2>
-          <p className="text-gray-600 mb-5 text-sm">
+          <p className="text-gray-600 mb-4 sm:mb-5 text-xs sm:text-sm text-center sm:text-left">
             An emergency recovery code is one of the codes we showed you after
             you set up 2-step login.Each emergency recovery code can be used
             exactly once.
           </p>
-          <p className="text-gray-800 mb-2 text-sm font-semibold">
+          <p className="text-gray-800 mb-2 text-sm font-semibold text-center sm:text-left">
             Emergency recovery code
           </p>
           <input
@@ -71,16 +68,18 @@ function RecoveryAuthPage() {
             value={code}
             onChange={(e) => setCode(e.target.value)}
             className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:outline-none text-start text-2xl"
-           placeholder="____-____-____-____"
+            placeholder="____-____-____-____"
             maxLength={12}
             required
           />
-          <button
-            className="w-[30%] bg-[#972c37] text-white py-2 mt-4 rounded-md hover:bg-[#b13340] text-lg "
+          <div className="flex items-center justify-center">
+            <button
+            className="w-[30%] bg-[#972c37]  text-white py-2 mt-4 rounded-md hover:bg-[#b13340] text-lg "
             onClick={handleSubmit}
           >
             Authenticate
           </button>
+          </div>
           <div className="mt-4 text-sm text-gray-800 text-center border-t  border-gray-300 py-2 w-full">
             <a href="#" className="text-gray-800  hover:underline">
               Authenticate using emergency recovery code instead
