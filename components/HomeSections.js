@@ -93,7 +93,7 @@ export default function HomeSections() {
       <div className="flex flex-col md:flex-row items-center gap-6 bg-green-100 p-6 rounded-lg max-w-4xl w-full">
         <div className="flex-shrink-0">
           <img
-            src="/person.jpg"
+            src="/person2.PNG"
             alt="Example acceptable verification photo"
             className="h-80 w-64 rounded-lg border-green-400 border-2 object-cover"
           />
