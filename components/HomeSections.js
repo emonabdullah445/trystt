@@ -117,7 +117,7 @@ export default function HomeSections() {
       <div className="flex flex-col sm:flex-row items-center gap-4 bg-red-100 p-6 rounded-lg">
         <div className="flex-shrink-0">
             <img
-            src="/person2.png"
+            src="/person2.PNG"
             alt="Unacceptable verification photo - face obscured"
             className="h-64 w-48 rounded-lg border-red-400 border-2 object-cover"
           />
@@ -136,7 +136,7 @@ export default function HomeSections() {
       <div className="flex flex-col sm:flex-row items-center gap-4 bg-red-100 p-6 rounded-lg">
         <div className="flex-shrink-0">
           <img
-            src="/person3.png"
+            src="/person3.PNG"
             alt="Unacceptable verification photo - face obscured"
             className="h-64 w-48 rounded-lg border-red-400 border-2 object-cover"
           />
