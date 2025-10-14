@@ -102,9 +102,10 @@ export default function HomeSections() {
           <h3 className="text-lg font-semibold text-green-800 mb-3">Acceptable Photo</h3>
           <ul className="list-disc pl-5 space-y-2 text-gray-700">
             <li>You haven't made any edits or used any sort of filter or stickers</li>
-            <li>Your face is fully visible and recognizable</li>
+            <li>Your face is fully visible</li>
             <li>We can clearly see that it is you holding the sign</li>
-            <li>Your whole torso is visible for matching to profile photos</li>
+            <li>Nothing on your sign is incorrect or obscured by your hand</li>
+            <li>We can see your whole torso allowing us to match you to the photos on your profile photos</li>
           </ul>
         </div>
       </div>
@@ -115,18 +116,18 @@ export default function HomeSections() {
   
       <div className="flex flex-col sm:flex-row items-center gap-4 bg-red-100 p-6 rounded-lg">
         <div className="flex-shrink-0">
-          <img
-            src="/person.jpg"
-            alt="Unacceptable verification photo - arm not visible"
+            <img
+            src="/person2.png"
+            alt="Unacceptable verification photo - face obscured"
             className="h-64 w-48 rounded-lg border-red-400 border-2 object-cover"
           />
         </div>
         <div className="flex-1">
-          <h3 className="text-lg font-semibold text-red-800 mb-3"> Unacceptable Photo</h3>
+          <h3 className="text-lg font-semibold text-red-800 mb-3"> Acceptable Photo</h3>
           <ul className="list-disc pl-5 space-y-2 text-gray-700">
-            <li>Arm and hand not visible, making verification impossible</li>
-            <li>Sign is partially obscured or unclear</li>
-            <li>Cannot confirm you're actually holding the sign</li>
+            <li>We can't clearly tell that it is you holding the sign because your shoulder and arm are not visible.We must be able to see enough of your arm to know that the sign is held by you and not someone else</li>
+            <li>Sign is partially out of frame</li>
+            
           </ul>
         </div>
       </div>
@@ -135,7 +136,7 @@ export default function HomeSections() {
       <div className="flex flex-col sm:flex-row items-center gap-4 bg-red-100 p-6 rounded-lg">
         <div className="flex-shrink-0">
           <img
-            src="/person.jpg"
+            src="/person3.png"
             alt="Unacceptable verification photo - face obscured"
             className="h-64 w-48 rounded-lg border-red-400 border-2 object-cover"
           />
@@ -143,9 +144,8 @@ export default function HomeSections() {
         <div className="flex-1">
           <h3 className="text-lg font-semibold text-red-800 mb-3"> Unacceptable Photo</h3>
           <ul className="list-disc pl-5 space-y-2 text-gray-700">
-            <li>Face is obscured, preventing identity verification</li>
-            <li>Poor lighting or positioning makes verification difficult</li>
-            <li>Ensure your entire face and the sign are clearly visible</li>
+            <li>Your face is obscured preventing us verifying you fully we recognize that face in provided may not want to show their face verifying however due to the nature of Tryst link as an adult platform, we must verify you this way.</li>
+          
           </ul>
         </div>
       </div>
