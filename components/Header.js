@@ -19,23 +19,23 @@ function Header() {
           <div className="w-[80px] lg:w-[110px] h-auto">
             <Image src={Logo} alt="logo" />
           </div>
-
-          {!isHome && (
-            <div className="mt-[6px] mr-3 lg:mr-0 flex gap-4 lg:gap-[50px] text-[16px] lg:text-[20px]">
-              <div className="hidden sm:flex items-center">
-                <span className="mr-2 lg:mr-3 text-[16px] lg:text-[20px]">
-                  <GoSearch />
-                </span>
-                Search
-              </div>
-            </div>
-          )}
         </div>
 
         {/* Mobile Search Icon */}
         {!isHome && (
           <div className="hidden items-center text-[20px]">
             <GoSearch />
+          </div>
+        )}
+
+        {!isHome && (
+          <div className="mt-[6px] mr-3 lg:mr-0 flex gap-4 lg:gap-[50px] text-[16px] lg:text-[20px]">
+            <div className="hidden sm:flex items-center">
+              <span className="mr-2 lg:mr-3 text-[16px] lg:text-[20px]">
+                <GoSearch />
+              </span>
+              Search
+            </div>
           </div>
         )}
 
@@ -86,25 +86,25 @@ function Header() {
                 </li>
               </ul>
             </div>
-
-           
           </>
         )}
-         {/* Mobile Menu Button */}
-            <button 
-              className="lg:hidden flex flex-col gap-1"
-              onClick={() => setIsMenuOpen(!isMenuOpen)}
-            >
-              <span className="w-6 h-0.5 bg-white"></span>
-              <span className="w-6 h-0.5 bg-white"></span>
-              <span className="w-6 h-0.5 bg-white"></span>
-            </button>
+        {/* Mobile Menu Button */}
+        <button
+          className="lg:hidden flex flex-col gap-1"
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
+        >
+          <span className="w-6 h-0.5 bg-white"></span>
+          <span className="w-6 h-0.5 bg-white"></span>
+          <span className="w-6 h-0.5 bg-white"></span>
+        </button>
 
         {/* Right Section */}
         <div className="hidden lg:flex items-center">
           {!isHome && (
-            <div className="hidden sm:flex lg:text-[18px] text-white lg:pr-20 pt-3">
-              Login<span className="text-sm pl-2">or</span> Sign up
+            <div className="hidden sm:flex lg:text-[18px] text-white items-center justify-center lg:pr-20 pt-3 gap-2">
+              <span>Login</span>
+              <span>or</span>
+              <span>Sign up</span>
             </div>
           )}
 
@@ -122,7 +122,6 @@ function Header() {
               Login/Signup
             </div>
           )}
-
         </div>
       </div>
 

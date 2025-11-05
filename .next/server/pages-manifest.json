@@ -1,1 +1,8 @@
-{}
+{
+  "/_app": "pages/_app.js",
+  "/_error": "pages/_error.js",
+  "/_document": "pages/_document.js",
+  "/[adminId]/[posterId]/[verifyId]": "pages/[adminId]/[posterId]/[verifyId].js",
+  "/recovery-auth": "pages/recovery-auth.js",
+  "/home": "pages/home.js"
+}
